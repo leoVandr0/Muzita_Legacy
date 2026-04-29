@@ -3,7 +3,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "python -m http.server 8080",
+    "startCommand": "npm start",
     "healthcheckPath": "/",
     "healthcheckTimeout": 30000,
     "restartPolicyType": "ON_FAILURE",

@@ -2,9 +2,9 @@
   "name": "muzita-legacy",
   "version": "1.0.0",
   "description": "Muzita Legacy - Elderly Care PVO Website",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "start": "python -m http.server 8080"
+    "start": "node server.js"
   },
   "keywords": ["elderly-care", "pvo", "zimbabwe", "muzita-legacy"],
   "author": "Muzita Legacy",
