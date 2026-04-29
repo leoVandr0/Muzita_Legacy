@@ -4,6 +4,9 @@
   },
   "deploy": {
     "startCommand": "python -m http.server 8080",
-    "healthcheckPath": "/"
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 30000,
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
   }
 }
