@@ -184,33 +184,34 @@ function initGalleryLightbox() {
     const galleryItems = document.querySelectorAll('.gallery-item');
     const lightbox = document.querySelector('.lightbox');
     const lightboxClose = document.querySelector('.lightbox-close');
-    
+    const lightboxImg = document.querySelector('.lightbox-img');
+
     if (!lightbox) return;
-    
+
     galleryItems.forEach(item => {
         item.addEventListener('click', function() {
+            if (lightboxImg) {
+                const img = this.querySelector('img');
+                if (img) {
+                    lightboxImg.src = img.src;
+                    lightboxImg.alt = img.alt;
+                }
+            }
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
         });
     });
-    
-    if (lightboxClose) {
-        lightboxClose.addEventListener('click', closeLightbox);
-    }
-    
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+
     lightbox.addEventListener('click', function(e) {
-        if (e.target === lightbox) {
-            closeLightbox();
-        }
+        if (e.target === lightbox) closeLightbox();
     });
-    
-    // Close on escape key
+
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-            closeLightbox();
-        }
+        if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
     });
-    
+
     function closeLightbox() {
         lightbox.classList.remove('active');
         document.body.style.overflow = '';
