@@ -1,12 +1,13 @@
-{
+﻿{
   "name": "muzita-legacy",
   "version": "1.0.0",
-  "description": "Muzita Legacy - Elderly Care PVO Website",
+  "description": "Muzita Life Legacy - Elderly Care PVO Website",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "keywords": ["elderly-care", "pvo", "zimbabwe", "muzita-legacy"],
-  "author": "Muzita Legacy",
+  "author": "Muzita Life Legacy",
   "license": "MIT"
 }
+

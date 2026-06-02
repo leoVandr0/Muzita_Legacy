@@ -1,4 +1,4 @@
-const http = require('http');
+﻿const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -56,6 +56,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Muzita Legacy website running on port ${PORT}`);
+  console.log(`Muzita Life Legacy website running on port ${PORT}`);
   console.log(`Visit: http://localhost:${PORT}`);
 });
+
