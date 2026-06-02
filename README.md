@@ -1,4 +1,4 @@
-# Muzita Legacy - Elderly Care PVO Website
+﻿# Muzita Legacy - Elderly Care PVO Website
 
 A modern, responsive website for Muzita Legacy, a Private Voluntary Organisation supporting Zimbabwe's elderly with home visits, health support, and social connections.
 
@@ -74,7 +74,7 @@ muzita-legacy/
 
 - **Location**: Murehwa Culture Centre, Mashonaland East, Zimbabwe
 - **Phone**: +263 772 709 436
-- **Email**: muzitalegacy@gmail.com
+- **Email**: Muzitalifelegacy@gmail.com
 
 ## 🤝 Contributing
 
@@ -91,3 +91,4 @@ This project is open source and available under the [MIT License](LICENSE).
 ---
 
 **Muzita Legacy** - Empowering Communities to Care for Our Elderly
+
