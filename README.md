@@ -73,7 +73,7 @@ muzita-legacy/
 ## 📞 Contact Information
 
 - **Location**: Murehwa Culture Centre, Mashonaland East, Zimbabwe
-- **Phone**: +263 772 709 436
+- **Phone**: 0772709436, 0787161655
 - **Email**: Muzitalifelegacy@gmail.com
 
 ## 🤝 Contributing
