@@ -185,17 +185,22 @@ function initGalleryLightbox() {
     const lightbox = document.querySelector('.lightbox');
     const lightboxClose = document.querySelector('.lightbox-close');
     const lightboxImg = document.querySelector('.lightbox-img');
+    const lightboxCaption = document.querySelector('.lightbox-caption');
 
     if (!lightbox) return;
 
     galleryItems.forEach(item => {
         item.addEventListener('click', function() {
-            if (lightboxImg) {
-                const img = this.querySelector('img');
-                if (img) {
-                    lightboxImg.src = img.src;
-                    lightboxImg.alt = img.alt;
-                }
+            const img = this.querySelector('img');
+            if (lightboxImg && img) {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+            }
+            if (lightboxCaption) {
+                // Prefer the full storytelling caption, falling back to the image alt text
+                const caption = this.getAttribute('data-caption') || (img ? img.alt : '');
+                lightboxCaption.textContent = caption;
+                lightboxCaption.style.display = caption ? '' : 'none';
             }
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden';
